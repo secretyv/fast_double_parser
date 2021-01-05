@@ -196,7 +196,7 @@ void process(const std::vector<std::string>& lines, size_t volume) {
   // size_t howmany = lines.size();
   std::chrono::high_resolution_clock::time_point t1, t2;
   double dif, ts;
-  for (size_t i = 0; i < 3; i++) {
+  for (size_t i = 0; i < 5; i++) {
     if (i > 0)
       printf("=== trial %zu ===\n", i);
 
@@ -281,7 +281,7 @@ void demo(size_t howmany) {
 
 int main(int argc, char **argv) {
   if (argc == 1) {
-    demo(100 * 1000);
+    demo(1000 * 1000);
     std::cout << "You can also provide a filename: it should contain one "
                  "string per line corresponding to a number"
               << std::endl;
